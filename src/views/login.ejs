@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center text-primary">Login</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <form action="/login" method="post">
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="email" name="email" required placeholder="Ingresa tu correo" class="form-control">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password name=password" placeholder="Ingresa tu contraseña" class="form-control">
+                </div>
+    
+    <button class="btn btn-primary mt-3">Ingresar</button>
+    
+                </form>
+                <h2 class="text-center text-success mt-5">Nuevo usuario ?</h2>
+                <button class="btn btn-large btn-success mt-5" onclick="location.href='/registro'">Registrate</button>
+
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
